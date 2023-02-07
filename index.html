@@ -5,7 +5,7 @@
     <style data-merge-styles="true"></style>
     <style data-merge-styles="true"></style>
     <style data-merge-styles="true"></style>
-    <title>Generate TOC Table of Contents from GitHub Markdown or Wiki Online</title>
+    <title>Gerador de índice para Markdown</title>
     <style>
         div.column {
             display: inline-block;
@@ -26,27 +26,26 @@
 </head>
 
 <body>
-    <h1>GitHub Wiki TOC generator</h1>
-    <p>This page uses markdown-toc library to generate your MarkDown TOC online.</p>
-    <p></p>
+    <p>Esta página usa a lib markdown-toc pra gerar uma tabela de conteúdo (índice) do seu Markdown.</p>
+    <p>Versão original: http://ecotrust-canada.github.io/markdown-toc/</p>
     <div>
         <div class="column">
-            paste markdown here
+            Cole o seu Markdown aqui:
             <textarea id="md" onchange="convert()" spellcheck="false" data-ms-editor="true">
-# Paste Your Document In Here
+# Cole o Seu Markdown aqui
 
-## And a table of contents
+## E a table de conteúdo
 
-will be generated
+será gerada
 
-## On the right
+## Do lado direito
 
-side of this page.
+desta página.
 
             </textarea>
         </div>
         <div class="column">
-            TOC generated here
+            Índice gerado aqui
             <textarea id="toc" spellcheck="false" data-ms-editor="true">    </textarea>
             <editor-squiggler>
                 <style>
@@ -65,7 +64,7 @@ side of this page.
         </div>
     </div>
     <p>
-        <button onclick="convert()">convert</button>
+        <button onclick="convert()">Converter</button>
     </p>
     <script src="./toc-gh-md.js"></script>
 
